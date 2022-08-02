@@ -22,7 +22,7 @@ router.get("/:id", (req, res) => {
     },
     include: [
       {
-        model: Pets,
+        model: Pet,
         attributes: [
           "id",
           "name",
