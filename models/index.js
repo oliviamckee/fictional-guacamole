@@ -1,7 +1,12 @@
 const User = require("./User");
 const Pet = require("./Pet");
-const Vet = require("./Vet");
 
-// TODO: create connections
+User.hasMany(Pet, {
+  foreignKey: "owner_id",
+});
 
-module.exports = { User, Pet, Vet };
+Pet.belongsTo(User, {
+  foreignKey: "owner_id",
+});
+
+module.exports = { User, Pet };
