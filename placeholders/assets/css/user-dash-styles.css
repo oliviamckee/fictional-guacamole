@@ -1,0 +1,29 @@
+header {
+    display: flex;
+    justify-content: space-around;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+ul {
+    list-style: none;
+}
+section {
+    width: 50%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    flex-wrap: wrap;
+    font-size: large;
+}
+form {
+    display: grid;
+}
+label {
+    margin: 5px;
+}
+button {
+    margin: 5px;
+}
