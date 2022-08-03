@@ -35,7 +35,7 @@ Pet.init(
       allowNull: false,
     },
     birthday: {
-      type: DataTypes.DATE,
+      type: DataTypes.STRING,
       allowNull: false,
     },
     medical_history: {
