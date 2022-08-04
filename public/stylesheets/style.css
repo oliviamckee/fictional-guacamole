@@ -12,6 +12,15 @@ body {
     color: aquamarine;
 }
 
+footer {
+    color: rgba(184, 203, 73, 100);
+    border-color: rgba(78, 59, 54, 100);
+    border: 5px;
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+}
+
 section {
     display: flex;
     font-size: larger;
