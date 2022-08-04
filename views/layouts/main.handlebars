@@ -5,20 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fictional-Guacamole</title>
-    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="../../public/stylesheets/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="body">
         <header>
             <h1>
                 <a href="/">Fictional-Guacamole</a>
             </h1>
             <nav>
                 {{#if loggedIn}}
-                <a href="/dashboard">dashboard</a>
-                <button id="logout" class="btn-no-style">logout</button>
+                <a href="/">Homepage</a>
+                <button id="logout">logout</button>
                 {{else}}
                 <a href="/login">login</a>
                 {{/if}}
@@ -28,7 +28,7 @@
             {{{ body }}}
         </main>
         <footer>
-            Thanks for visiting!
+            Thanks for boarding with Fictional Guacamole!!!!
         </footer>
     </div>
 
