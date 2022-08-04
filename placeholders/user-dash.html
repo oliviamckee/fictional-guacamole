@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="./assets/css/user-dash-styles.css" />
+</head>
+
+<body>
+    <header>
+        <h1>
+            <a href="index.html">Boarding app</a>
+        </h1>
+        <h1>Hello, `Username`!</h1>
+        <nav>
+            <ul>
+                <h3><a href="index.html">Log Out</a></h3>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h3>Your pets:</h3>
+        <ul>
+            <li>Deedee</li>
+            <li>Dexter</li>
+            <li>Tuxedo</li>
+            <li>Prince</li>
+            <li>Bitey</li>
+        </ul>
+    </section>
+    <section>
+        <form>
+            <label for="petName">What is your pets name?</label>
+            <input type="text" placeholder="" name="petName" />
+            <label for="species">What is your pets species?</label>
+            <input type="text" placeholder="" name="species" />
+            <label for="breed">What breed is your pet?</label>
+            <input type="text" placeholder="" name="breed" />
+            <label for="sex">Is your pet male or female?</label>
+            <input type="text" placeholder="" name="sex" />
+            <label for="age">How old is your pet?</label>
+            <input type="number" placeholder="" name="age" />
+            <label for="medical">Describe medical conditions and medications:</label>
+            <input type="text" placeholder="" name="medical" />
+            <label for="traits">Are there any traits or quirks we should know about your pet?</label>
+            <input type="text" placeholder="" name="traits" />
+            <div>
+                <p>Please list the following information on your pets primary veterinarian:</p>
+                <label for="officeName">Office name:</label>
+                <input type="text" placeholder="" name="officeName" />
+                <label for="officeHours">Office hours:</label>
+                <input type="text" placeholder="" name="officehours" />
+                <label for="officePhone">Office phone:</label>
+                <input type="tel" placeholder="" name="officePhone" />
+            </div>
+            <label for="extraDetail">Anything else we should know about your pet?</label>
+            <input type="text" placeholder="" name="extraDetail" />
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+
+</html>
