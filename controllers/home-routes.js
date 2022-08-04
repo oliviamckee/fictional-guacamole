@@ -6,7 +6,7 @@ const withAuth = require("../utils/auth");
 router.get("/", withAuth, (req, res) => {
   Pet.findAll({
     where: {
-      user_id: req.session.user_id,
+      owner_id: req.session.user_id,
     },
   })
     .then((dbPetData) => {
