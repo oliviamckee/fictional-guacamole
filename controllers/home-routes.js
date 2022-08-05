@@ -10,7 +10,7 @@ router.get("/", withAuth, (req, res) => {
     },
   })
     .then((dbPetData) => {
-      res.render("homepage", dbPetData);
+      res.render("homepage", { dbPetData, loggedIn: req.session.loggedIn });
     })
     .catch((err) => {
       console.log(err);
