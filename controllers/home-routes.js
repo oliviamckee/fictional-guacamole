@@ -50,13 +50,19 @@ router.get("/add-pet", (req, res) => {
 });
 
 // edit pet route
-router.get("/edit-pet", (req, res) => {
-  if (req.session.loggedIn) {
-    res.redirect("/");
-    return;
-  }
+router.get("/edit/:id", (req, res) => {
+  Pet.findByPk(req.params.id)
+    .then((dbPetData) => {
+      const pet = dbPetData.get({ plain: true });
 
-  res.render("edit-pet");
+      res.render("edit-pet", {
+        pet,
+        loggedIn: true,
+      });
+    })
+    .catch((err) => {
+      res.status(500).json(err);
+    });
 });
 
 module.exports = router;
