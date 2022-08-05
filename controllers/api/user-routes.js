@@ -77,22 +77,22 @@ router.post("/", (req, res) => {
     });
 });
 
-//api/users/login POST route, 
-router.post('/login', (req, res) => {
+//api/users/login POST route,
+router.post("/login", (req, res) => {
   User.findOne({
     where: {
-      email: req.body.email
-    }
-  }).then(dbUserData => {
+      email: req.body.email,
+    },
+  }).then((dbUserData) => {
     if (!dbUserData) {
-      res.status(400).json({ message: 'No user with that email address!' });
+      res.status(400).json({ message: "No user with that email address!" });
       return;
     }
 
     const validPassword = dbUserData.checkPassword(req.body.password);
     console.log(validPassword); //////
     if (!validPassword) {
-      res.status(400).json({ message: 'Incorrect password!' });
+      res.status(400).json({ message: "Incorrect password!" });
       console.log(req.body.password); //////
       return;
     }
@@ -102,18 +102,18 @@ router.post('/login', (req, res) => {
       req.session.username = dbUserData.username;
       req.session.loggedIn = true;
 
-      res.json({ user: dbUserData, message: 'You are now logged in!' });
+      res.json({ user: dbUserData, message: "You are now logged in!" });
     });
   });
 });
 
-//api/users/logout, needs above route to work befor testing
-router.post("/logout", (req,res) => {
+//api/users/logout, needs above route to work before testing
+router.post("/logout", (req, res) => {
   if (req.session.loggedIn) {
     req.session.destroy(() => {
       res.status(204).end();
     });
-  }else {
+  } else {
     res.status(404).end();
   }
 });

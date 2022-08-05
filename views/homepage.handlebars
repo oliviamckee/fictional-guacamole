@@ -1,0 +1,37 @@
+<header>
+    <h1>Hello, `Username`!</h1>
+    <nav class="card-footer">
+        <a href="/add-pet" class="card-footer-item">Add</a>
+    </nav>
+</header>
+
+{{#each pets}}
+<div class="card">
+    <header class="card-header">
+        <p class="card-header-title">
+            {{name}}
+        </p>
+        <button class="card-header-icon" aria-label="more options">
+            <span class="icon">
+                <i class="fas fa-angle-down" aria-hidden="true"></i>
+            </span>
+        </button>
+    </header>
+    <div class="card-content">
+        <div class="content">
+            </br> {{species}}
+            </br> {{breed}}
+            </br> {{sex}}
+            </br> {{birthday}}
+            </br> {{medical_history}}
+            </br> {{medications}}
+            </br> {{personality}}
+            </br> {{caution}}
+            </br> {{vet}}
+            </br> {{other}}
+        </div>
+        <footer class="card-footer">
+            <a href="/edit/{{id}}" class="card-footer-item">Edit</a>
+        </footer>
+    </div>
+    {{/each}}

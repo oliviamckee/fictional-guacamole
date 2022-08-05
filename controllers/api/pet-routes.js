@@ -54,10 +54,10 @@ router.put("/:id", (req, res) => {
     {
       where: {
         id: req.params.id,
-      },
+      }
     }
   )
-    .then((dbPetData) => {
+    .then(dbPetData => {
       if (!dbPetData) {
         res.status(404).json({ message: "No pet found with this id" });
         return;
