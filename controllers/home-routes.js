@@ -10,7 +10,8 @@ router.get("/", withAuth, (req, res) => {
     },
   })
     .then((dbPetData) => {
-      res.render("homepage", { dbPetData, loggedIn: req.session.loggedIn });
+      const pets = dbPetData.map((pet) => pet.get({ plain: true }));
+      res.render("homepage", { pets, loggedIn: req.session.loggedIn });
     })
     .catch((err) => {
       console.log(err);
@@ -36,6 +37,26 @@ router.get("/sign-up", (req, res) => {
   }
 
   res.render("sign-up");
+});
+
+// add pet route
+router.get("/add-pet", (req, res) => {
+  if (req.session.loggedIn) {
+    res.redirect("/");
+    return;
+  }
+
+  res.render("add-pet");
+});
+
+// edit pet route
+router.get("/edit-pet", (req, res) => {
+  if (req.session.loggedIn) {
+    res.redirect("/");
+    return;
+  }
+
+  res.render("edit-pet");
 });
 
 module.exports = router;
