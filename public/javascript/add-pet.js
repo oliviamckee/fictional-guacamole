@@ -11,7 +11,7 @@ async function addPetFormHandler(event) {
   ).value;
   const medications = document.querySelector('input[name="medications"]').value;
   const personality = document.querySelector('input[name="personality"]').value;
-  const caution = document.querySelector('input[name="caution"]').value;
+  const caution = document.querySelector('select[name="caution"]').value;
   const vet = document.querySelector('input[name="vet"]').value;
   const other = document.querySelector('input[name="other"]').value;
 

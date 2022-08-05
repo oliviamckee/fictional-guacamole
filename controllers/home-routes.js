@@ -8,10 +8,16 @@ router.get("/", withAuth, (req, res) => {
     where: {
       owner_id: req.session.user_id,
     },
+    include: [
+      {
+        model: User,
+        attributes: ["name"]
+      }
+    ]
   })
     .then((dbPetData) => {
       const pets = dbPetData.map((pet) => pet.get({ plain: true }));
-      res.render("homepage", { pets, loggedIn: req.session.loggedIn });
+      res.render("homepage", { pets, loggedIn: req.session.loggedIn, username: req.session.username });
     })
     .catch((err) => {
       console.log(err);
@@ -41,11 +47,6 @@ router.get("/sign-up", (req, res) => {
 
 // add pet route
 router.get("/add-pet", (req, res) => {
-  if (req.session.loggedIn) {
-    res.redirect("/");
-    return;
-  }
-
   res.render("add-pet");
 });
 
