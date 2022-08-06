@@ -113,10 +113,10 @@ a {
 }
 
 .button-35 {
-    background-color: red;
+    background-color: rgb(206, 88, 88);
     border-radius: 100px;
-    box-shadow: rgba(58, 3, 6, 0.753) 0 -25px 18px -14px inset, rgba(58, 3, 6, 0.753) 0 1px 2px, rgba(58, 3, 6, 0.753) 0 2px 4px, rgba(58, 3, 6, 0.753) 0 4px 8px, rgba(58, 3, 6, 0.753) 0 8px 16px, rgba(58, 3, 6, 0.753) 0 16px 32px;
-    color: black;
+    box-shadow: rgba(138, 8, 14, 0.2) 0 -25px 18px -14px inset, rgba(138, 8, 14, 0.2) 0 1px 2px, rgba(138, 8, 14, 0.2) 0 2px 4px, rgba(138, 8, 14, 0.2) 0 4px 8px, rgba(138, 8, 14, 0.2) 0 8px 16px, rgba(138, 8, 14, 0.2) 0 16px 32px;
+    color: white;
     cursor: pointer;
     display: inline-block;
     font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
@@ -132,6 +132,6 @@ a {
 }
 
 .button-35:hover {
-    box-shadow: rgba(58, 3, 6, 0.753) 0 -25px 18px -14px inset, rgba(58, 3, 6, 0.753) 0 1px 2px, rgba(58, 3, 6, 0.753) 0 2px 4px, rgba(58, 3, 6, 0.753) 0 4px 8px, rgba(58, 3, 6, 0.753) 0 8px 16px, rgba(58, 3, 6, 0.753) 0 16px 32px;
+    box-shadow: rgba(153, 13, 20, 0.418) 0 -25px 18px -14px inset, rgba(139, 12, 19, 0.555) 0 1px 2px, rgba(124, 12, 17, 0.548) 0 2px 4px, rgba(139, 19, 25, 0.521) 0 4px 8px, rgba(124, 10, 16, 0.623) 0 8px 16px, rgba(136, 16, 22, 0.589) 0 16px 32px;
     transform: scale(1.05) rotate(-1deg);
 }
