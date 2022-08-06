@@ -1,12 +1,12 @@
 <div>
-    <h1>Hello, {{username}}!</h1>
+    <h1 class="username">Hello, {{username}}!</h1>
     <nav class="card-footer">
-        <a href="/add-pet" class="card-footer-item">Add Pet</a>
+        <a href="/add-pet" class="card-footer-item button-34">Add Pet</a>
     </nav>
 </div>
 
 
-<div class="columns">
+<div class="columns is-centered mr-1 ml-1">
     {{#each pets}}
     <div class="column is-flex-wrap-wrap">
         
@@ -36,7 +36,7 @@
                     </br>other: {{other}}
                 </div>
                 <footer class="card-footer">
-                    <a href="/edit/{{id}}" class="card-footer-item">Edit</a>
+                    <a href="/edit/{{id}}" class="card-footer-item button-33">Edit</a>
                 </footer>
             </div>
 
