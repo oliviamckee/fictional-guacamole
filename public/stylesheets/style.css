@@ -48,7 +48,6 @@ a {
 .edit-page-section {
     justify-content: center;
 }
-<<<<<<< HEAD
 .add-page-section{
     justify-content: center;
 }
@@ -61,13 +60,9 @@ a {
 .login-page-buttons{
     display: flex;
 }
-=======
-
 .sign-up-form {
     justify-content: center;
 }
-
->>>>>>> cd355825cfb7c0c38a065a0078517d78a9efda85
 .button-33 {
     background-color: #c2fbd7;
     border-radius: 100px;
