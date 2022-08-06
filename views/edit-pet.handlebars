@@ -17,7 +17,10 @@
         <label for="personality">Are there any traits or quirks we should know about your pet?</label>
         <input type="text" name="personality" value="{{pet.personality}}" />
         <label for="caution">Is your pet aggressive towards people or other animals?</label>
-        <input type="text" name="caution" value="{{pet.caution}}" />
+        <select name="caution">
+            <option value="true">True</option>
+            <option value="false">False</option>
+        </select>
         <label for="vet">Who is your pet's veterinarian?</label>
         <input type="text" name="vet" value="{{pet.vet}}" />
         <label for="other">Anything else we should know about your pet?</label>
