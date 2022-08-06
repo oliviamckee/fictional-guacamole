@@ -11,27 +11,27 @@
 </head>
 
 <body>
-    
-        <header>
-            <h1 class="guac">
-                {{!-- <img src="/stylesheets/images/avocado2.png" alt="avocado2"> --}}
-                <a href="/">Fictional Guacamole</a>
-            </h1>
-            
-        </header>
-        <main>
-            {{{ body }}}
-        </main>
-        <footer class="footer">
-            Thanks for boarding with Fictional Guacamole!!!!
-            <nav>
-                {{#if loggedIn}}
-                
-                <button id="logout" class="button-33">🥑 logout 🥑</button>
-                {{/if}}
-            </nav>
-        </footer>
-    
+
+    <header>
+        <h1 class="guac">
+            {{!-- <img src="/stylesheets/images/avocado2.png" alt="avocado2"> --}}
+            <a class="title is-size-1" href="/">Fictional Guacamole</a>
+        </h1>
+
+    </header>
+    <main>
+        {{{ body }}}
+    </main>
+    <footer class="footer">
+        Thanks for boarding with Fictional Guacamole!!!!
+        <nav>
+            {{#if loggedIn}}
+
+            <button id="logout" class="button-33">🥑 logout 🥑</button>
+            {{/if}}
+        </nav>
+    </footer>
+
 
     {{#if loggedIn}}
     <script src="/javascript/logout.js"></script>
