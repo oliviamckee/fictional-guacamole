@@ -17,7 +17,7 @@ router.get("/", withAuth, (req, res) => {
   })
     .then((dbPetData) => {
       const pets = dbPetData.map((pet) => pet.get({ plain: true }));
-      res.render("homepage", { pets, loggedIn: req.session.loggedIn, username: req.session.username });
+      res.render("homepage", { pets, loggedIn: req.session.loggedIn, username: req.session.full_name });
     })
     .catch((err) => {
       console.log(err);

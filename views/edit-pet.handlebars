@@ -1,29 +1,34 @@
-<section>
+<section class="edit-page-section">
     <form class="edit-pet-form">
-        <label for="name">What is your pet's name?</label>
-        <input type="text" name="name" value="{{pet.name}}" />
-        <label for="species">What is your pet's species?</label>
-        <input type="text" name="species" value="{{pet.species}}" />
-        <label for="breed">What breed is your pet?</label>
-        <input type="text" name="breed" value="{{pet.breed}}" />
-        <label for="sex">Is your pet male or female?</label>
-        <input type="text" name="sex" value="{{pet.sex}}" />
-        <label for="birthday">What is your pet's birthday?</label>
-        <input type="text" name="birthday" value="{{pet.birthday}}" />
-        <label for="medical_history">Does your pet have any major medical history?</label>
-        <input type="text" name="medical_history" value="{{pet.medical_history}}" />
-        <label for="medications">Is your pet on any medications? What are they and when are they given?</label>
-        <input type="text" name="medications" value="{{pet.medications}}" />
-        <label for="personality">Are there any traits or quirks we should know about your pet?</label>
-        <input type="text" name="personality" value="{{pet.personality}}" />
-        <label for="caution">Is your pet aggressive towards people or other animals?</label>
-        <input type="text" name="caution" value="{{pet.caution}}" />
-        <label for="vet">Who is your pet's veterinarian?</label>
-        <input type="text" name="vet" value="{{pet.vet}}" />
-        <label for="other">Anything else we should know about your pet?</label>
-        <input type="text" name="other" value="{{pet.other}}" />
-        <button type="submit">Submit</button>
+        <label class="label" for="name">✏️What is your pet's name?</label>
+            <input type="text" name="name" value="{{pet.name}}" />
+        <label class="label" for="species">🐈What is your pet's species?🐕</label>
+            <input type="text" name="species" value="{{pet.species}}" />
+        <label class="label" for="breed">🐩What breed is your pet?🐅</label>
+            <input type="text" name="breed" value="{{pet.breed}}" />
+        <label class="label" for="sex">⚥Is your pet male or female?</label>
+            <input type="text" name="sex" value="{{pet.sex}}" />
+        <label class="label" for="birthday">🎂What is your pet's birthday?</label>
+            <input type="text" name="birthday" value="{{pet.birthday}}" />
+        <label class="label" for="medical_history">⚕️Does your pet have any major medical history?</label>
+            <input type="text" name="medical_history" value="{{pet.medical_history}}" />
+        <label class="label" for="medications">🌳Is your pet on any medications? What are they and when are they given?</label>
+            <input type="text" name="medications" value="{{pet.medications}}" />
+        <label class="label" for="personality">📔Are there any traits or quirks we should know about your pet?</label>
+            <input type="text" name="personality" value="{{pet.personality}}" />
+        <label class="label" for="caution">⚠️Is your pet aggressive towards people or other animals?</label>
+            <select name="caution">
+                <option value="true">True</option>
+                <option value="false">False</option>
+            </select>
+        <label class="label" for="vet">🏥Who is your pet's veterinarian?</label>
+            <input type="text" name="vet" value="{{pet.vet}}" />
+        <label class="label" for="other">🔎Anything else we should know about your pet?</label>
+            <input type="text" name="other" value="{{pet.other}}" />
+        <button type="submit" class="button-33 m-1">Submit</button>
+        <button type="button" class="delete-pet-btn button-35 m-1">Delete</button>
     </form>
 </section>
 
 <script src="/javascript/edit-pets.js"></script>
+<script src="/javascript/delete-pets.js"></script>

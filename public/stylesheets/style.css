@@ -2,14 +2,18 @@
     box-sizing: border-box;
 }
 
-header {
-    display: flex;
-    justify-content: space-around;
-    margin: 0 5px 0 5px;
+.guac {
+
+    text-align: center;
 }
 
-body {
-    color: aquamarine;
+.title {
+    color: rgb(70, 92, 29);
+}
+
+.username {
+    font-size: xx-large;
+    text-align: center;
 }
 
 footer {
@@ -41,10 +45,35 @@ a {
     color: black;
 }
 
-div {
-    margin: 0 80px 0 0;
+.edit-page-section {
+    justify-content: center;
 }
 
+.add-page-section {
+    justify-content: center;
+}
+
+.sign-up-form {
+    justify-content: center;
+}
+
+.login-form {
+    justify-content: center;
+}
+
+.login-page-buttons {
+    display: flex;
+}
+
+.sign-up-form {
+    justify-content: center;
+}
+.tan{
+    background-color: rgb(202, 181, 153);
+}
+.green{
+    background-color: rgb(77, 143, 77);
+}
 .button-33 {
     background-color: #c2fbd7;
     border-radius: 100px;
@@ -66,5 +95,54 @@ div {
 
 .button-33:hover {
     box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+}
+
+.button-34 {
+    background-color: #c2fbd7;
+    border-radius: 100px;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
+    color: green;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin: 1% 40% 1% 40%;
+}
+
+.button-34:hover {
+    box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+}
+
+.button-35 {
+    background-color: rgb(206, 88, 88);
+    border-radius: 100px;
+    box-shadow: rgba(138, 8, 14, 0.2) 0 -25px 18px -14px inset, rgba(138, 8, 14, 0.2) 0 1px 2px, rgba(138, 8, 14, 0.2) 0 2px 4px, rgba(138, 8, 14, 0.2) 0 4px 8px, rgba(138, 8, 14, 0.2) 0 8px 16px, rgba(138, 8, 14, 0.2) 0 16px 32px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-35:hover {
+    box-shadow: rgba(153, 13, 20, 0.418) 0 -25px 18px -14px inset, rgba(139, 12, 19, 0.555) 0 1px 2px, rgba(124, 12, 17, 0.548) 0 2px 4px, rgba(139, 19, 25, 0.521) 0 4px 8px, rgba(124, 10, 16, 0.623) 0 8px 16px, rgba(136, 16, 22, 0.589) 0 16px 32px;
     transform: scale(1.05) rotate(-1deg);
 }

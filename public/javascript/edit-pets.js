@@ -1,6 +1,5 @@
 async function editFormHandler(event) {
   event.preventDefault();
-  console.log("edit button clicked");
 
   const id = window.location.toString().split("/")[
     window.location.toString().split("/").length - 1
@@ -21,7 +20,7 @@ async function editFormHandler(event) {
   const personality = document
     .querySelector('input[name="personality"]')
     .value.trim();
-  const caution = document.querySelector('input[name="caution"]').value.trim();
+  const caution = document.querySelector('select[name="caution"]').value.trim();
   const vet = document.querySelector('input[name="vet"]').value.trim();
   const other = document.querySelector('input[name="other"]').value.trim();
   const response = await fetch(`/api/pets/${id}`, {
