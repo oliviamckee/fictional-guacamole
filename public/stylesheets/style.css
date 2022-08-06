@@ -36,10 +36,6 @@ form {
     margin: 0 10px 0 0;
 }
 
-h4 {
-    display: contents;
-}
-
 a {
     text-decoration: none;
     color: black;
@@ -67,6 +63,14 @@ a {
 
 .sign-up-form {
     justify-content: center;
+}
+.about-app{
+    text-align: center;
+    font-size: x-large;
+    margin: 2% 30% 2% 30%;
+}
+.about-app h2{
+    font-weight: bolder;
 }
 .tan{
     background-color: rgb(202, 181, 153);
