@@ -1,37 +1,47 @@
-<header>
+<div>
     <h1>Hello, {{username}}!</h1>
     <nav class="card-footer">
         <a href="/add-pet" class="card-footer-item">Add Pet</a>
     </nav>
-</header>
+</div>
 
-{{#each pets}}
-<div class="card">
-    <header class="card-header">
-        <p class="card-header-title">
-            {{name}}
-        </p>
-        <button class="card-header-icon" aria-label="more options">
-            <span class="icon">
-                <i class="fas fa-angle-down" aria-hidden="true"></i>
-            </span>
-        </button>
-    </header>
-    <div class="card-content">
-        <div class="content">
-            species: {{species}}
-            </br>breed: {{breed}}
-            </br>sex: {{sex}}
-            </br>birthday: {{birthday}}
-            </br>medical-history: {{medical_history}}
-            </br>medications: {{medications}}
-            </br>personality: {{personality}}
-            </br>caution: {{caution}}
-            </br>veterinarian: {{vet}}
-            </br>other: {{other}}
+
+<div class="columns">
+    {{#each pets}}
+    <div class="column is-flex-wrap-wrap">
+        
+        <div class="card p-2 box">
+
+            <header class="card-header">
+                <p class="card-header-title">
+                    {{name}}
+                </p>
+                <button class="card-header-icon" aria-label="more options">
+                    <span class="icon">
+                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                </button>
+            </header>
+            <div class="card-content">
+                <div>
+                    species: {{species}}
+                    </br>breed: {{breed}}
+                    </br>sex: {{sex}}
+                    </br>birthday: {{birthday}}
+                    </br>medical-history: {{medical_history}}
+                    </br>medications: {{medications}}
+                    </br>personality: {{personality}}
+                    </br>caution: {{caution}}
+                    </br>veterinarian: {{vet}}
+                    </br>other: {{other}}
+                </div>
+                <footer class="card-footer">
+                    <a href="/edit/{{id}}" class="card-footer-item">Edit</a>
+                </footer>
+            </div>
+
         </div>
-        <footer class="card-footer">
-            <a href="/edit/{{id}}" class="card-footer-item">Edit</a>
-        </footer>
+
     </div>
     {{/each}}
+</div>
