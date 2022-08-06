@@ -22,7 +22,7 @@ Navigate to the homepage and either sign up or log into an existing account. Cli
 
 ## Credit
 
-[Bulma CSS Framework](https://bulma.io/) | [CSS Scan buttons](https://getcssscan.com/css-buttons-examples)
+[Bulma CSS Framework](https://bulma.io/) | [CSS Scan buttons](https://getcssscan.com/css-buttons-examples) | [Emojipedida](https://emojipedia.org/)
 
 ## License
 
