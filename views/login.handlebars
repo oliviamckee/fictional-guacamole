@@ -1,18 +1,24 @@
 <form class="login-form">
-  <div>
-    <label for="email-login">email:</label>
-    <input type="text" id="email-login" />
+  <div class="field">
+    <label for="email-login" class="label">📧email:</label>
+    <div class="control">
+      <input type="text" id="email-login" />
+    </div>
   </div>
   <div>
-    <label for="password-login">password:</label>
-    <input type="password" id="password-login" />
-  </div>
-  <div>
-    <button type="submit">login</button>
-  </div>
+    <div class="field">
+      <label for="password-login" class="label">🔒password:</label>
+      <div class="control">
+        <input type="password" id="password-login" />
+      </div>
+    </div>
+    <div class="login-page-buttons">
+      <button type="submit" class="button-33">login</button>
+      <a href="/sign-up" class="button-34">Sign Up</a>
+    </div>
 
 </form>
 
-<a href="/sign-up">Sign Up</a>
+
 
 <script src="/javascript/login.js"></script>
