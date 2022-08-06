@@ -1,6 +1,5 @@
 async function editFormHandler(event) {
   event.preventDefault();
-  console.log("edit button clicked");
 
   const id = window.location.toString().split("/")[
     window.location.toString().split("/").length - 1
