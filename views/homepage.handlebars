@@ -9,31 +9,26 @@
 <div class="columns is-centered mr-1 ml-1">
     {{#each pets}}
     <div class="column is-flex-wrap-wrap">
-        
-        <div class="card p-2 box">
+
+        <div class="card p-2 box tan">
 
             <header class="card-header">
-                <p class="card-header-title">
-                    {{name}}
+                <p class="card-header-title is-size-4 green">
+                    ✏️{{name}}
                 </p>
-                <button class="card-header-icon" aria-label="more options">
-                    <span class="icon">
-                        <i class="fas fa-angle-down" aria-hidden="true"></i>
-                    </span>
-                </button>
             </header>
             <div class="card-content">
                 <div>
-                    species: {{species}}
-                    </br>breed: {{breed}}
-                    </br>sex: {{sex}}
-                    </br>birthday: {{birthday}}
-                    </br>medical-history: {{medical_history}}
-                    </br>medications: {{medications}}
-                    </br>personality: {{personality}}
-                    </br>caution: {{caution}}
-                    </br>veterinarian: {{vet}}
-                    </br>other: {{other}}
+                    <b>🐈species:🐕</b> {{species}}
+                    </br><b>🐩breed:🐅</b> {{breed}}
+                    </br><b>⚥sex:</b> {{sex}}
+                    </br><b>🎂birthday:</b> {{birthday}}
+                    </br><b>⚕️medical-history:</b> {{medical_history}}
+                    </br><b>🌳medications:</b> {{medications}}
+                    </br><b>📔personality:</b> {{personality}}
+                    </br><b>⚠️caution:</b> {{caution}}
+                    </br><b>🏥veterinarian:</b> {{vet}}
+                    </br><b>🔎other:</b> {{other}}
                 </div>
                 <footer class="card-footer">
                     <a href="/edit/{{id}}" class="card-footer-item button-33">Edit</a>
