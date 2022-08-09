@@ -17,7 +17,7 @@ async function loginFormHandler(event) {
         if (response.ok) {
             document.location.replace("/");
         }else {
-            alert(response.statusText);
+            alert("Incorrect password or email.");
         }
     }
 }

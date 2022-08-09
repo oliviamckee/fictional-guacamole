@@ -40,11 +40,11 @@ Pet.init(
     },
     medical_history: {
       type: DataTypes.STRING,
-      allowNull: true,
+      allowNull: false,
     },
     medications: {
       type: DataTypes.STRING,
-      allowNull: true,
+      allowNull: false,
     },
     personality: {
       type: DataTypes.STRING,
