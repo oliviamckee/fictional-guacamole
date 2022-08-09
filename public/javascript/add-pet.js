@@ -15,6 +15,7 @@ async function addPetFormHandler(event) {
   const vet = document.querySelector('input[name="vet"]').value;
   const other = document.querySelector('input[name="other"]').value;
 
+  if (name && species && breed && sex && birthday && medical_history && medications && personality && caution && vet) {
   const response = await fetch("/api/pets", {
     method: "POST",
     body: JSON.stringify({
@@ -40,6 +41,9 @@ async function addPetFormHandler(event) {
   } else {
     alert(response.statusText);
   }
+} else {
+  alert("Please fill out all fields.")
+}
 }
 
 document

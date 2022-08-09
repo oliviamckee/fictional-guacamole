@@ -25,6 +25,8 @@ async function signupFormHandler(event) {
     } else {
       alert(response.statusText);
     }
+  } else {
+    alert("Please fill out all relevant fields.")
   }
 }
 
