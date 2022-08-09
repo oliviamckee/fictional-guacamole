@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fictional Guacamole</title>
+    <title>fictional guacamole</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="/stylesheets/style.css">
@@ -12,18 +12,17 @@
 
 <body>
 
-    <header>
+    <header class="lime">
         <h1 class="guac">
-            {{!-- <img src="/stylesheets/images/avocado2.png" alt="avocado2"> --}}
-            <a class="title is-size-1" href="/">Fictional Guacamole</a>
+            <a class="title is-size-1" href="/"><img src="/stylesheets/images/header.png"></a>
         </h1>
 
     </header>
     <main>
         {{{ body }}}
     </main>
-    <footer class="footer">
-        Thanks for boarding with Fictional Guacamole!!!!
+    <footer class="footer mt-6">
+        <p>thanks for boarding with fictional guacamole!!!!</p>
         <nav>
             {{#if loggedIn}}
 
