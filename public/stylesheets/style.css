@@ -1,5 +1,32 @@
 * {
     box-sizing: border-box;
+    font-family: monospace;
+}
+
+html {
+    height: 100%;
+
+}
+
+body {
+    background-color: rgba(222, 239, 211, 100);
+    min-height: 100%;
+}
+
+footer {
+    background-image: url(/stylesheets/images/avocado.jpeg);
+    background-position: center;
+    background-size: cover;
+    color: rgba(184, 203, 73, 100);
+    border-color: rgba(78, 59, 54, 100);
+    border: 5px;
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+}
+
+footer p {
+    text-shadow: 1px 1px black;
 }
 
 .guac {
@@ -16,15 +43,6 @@
     text-align: center;
 }
 
-footer {
-    color: rgba(184, 203, 73, 100);
-    border-color: rgba(78, 59, 54, 100);
-    border: 5px;
-    margin: auto;
-    text-align: center;
-    font-size: 30px;
-}
-
 section {
     display: flex;
     font-size: larger;
@@ -34,10 +52,6 @@ section {
 form {
     display: grid;
     margin: 0 10px 0 0;
-}
-
-h4 {
-    display: contents;
 }
 
 a {
@@ -68,12 +82,25 @@ a {
 .sign-up-form {
     justify-content: center;
 }
-.tan{
+
+.about-app {
+    text-align: center;
+    font-size: x-large;
+    margin: 2% 30% 2% 30%;
+}
+
+.about-app h2 {
+    font-weight: bolder;
+}
+
+.tan {
     background-color: rgb(202, 181, 153);
 }
-.green{
+
+.green {
     background-color: rgb(77, 143, 77);
 }
+
 .button-33 {
     background-color: #c2fbd7;
     border-radius: 100px;
@@ -145,4 +172,20 @@ a {
 .button-35:hover {
     box-shadow: rgba(153, 13, 20, 0.418) 0 -25px 18px -14px inset, rgba(139, 12, 19, 0.555) 0 1px 2px, rgba(124, 12, 17, 0.548) 0 2px 4px, rgba(139, 19, 25, 0.521) 0 4px 8px, rgba(124, 10, 16, 0.623) 0 8px 16px, rgba(136, 16, 22, 0.589) 0 16px 32px;
     transform: scale(1.05) rotate(-1deg);
+}
+
+table,
+th,
+tr {
+    border: 1px solid tan;
+    margin: 2px;
+    font-weight: normal;
+}
+
+th {
+    padding-right: 12px;
+}
+
+.card-footer {
+    border: none;
 }
