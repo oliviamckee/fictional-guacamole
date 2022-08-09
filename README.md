@@ -22,7 +22,7 @@ Navigate to the homepage and either sign up or log into an existing account. Cli
 
 ## Credit
 
-[Bulma CSS Framework](https://bulma.io/) | [CSS Scan buttons](https://getcssscan.com/css-buttons-examples) | [Emojipedida](https://emojipedia.org/) | [avocado image](https://www.tastingtable.com/842086/how-to-tell-if-your-avocado-has-gone-bad/)
+[Bulma CSS Framework](https://bulma.io/) | [CSS Scan buttons](https://getcssscan.com/css-buttons-examples) | [Emojipedia](https://emojipedia.org/) | [avocado image](https://www.tastingtable.com/842086/how-to-tell-if-your-avocado-has-gone-bad/)
 
 ## License
 
