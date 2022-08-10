@@ -10,7 +10,7 @@ We created an application for a boarding facility where a user can create an acc
 - [Usage](#usage)
 - [Credit](#credit)
 - [License](#license)
-- [Questions](#questions)
+- [Collaborators](#collaborators)
 
 ## Installation
 
@@ -18,11 +18,17 @@ Navigate to the deployed [heroku page](https://fictional-guacamole.herokuapp.com
 
 ## Usage
 
-Navigate to the homepage and either sign up or log into an existing account. Click the add pet button to add a pet and fill out all fields with the relevant info. To edit an existing pet, click the edit pet button. 
+Navigate to the homepage and either sign up or log into an existing account. Click the add pet button to add a pet and fill out all fields with the relevant info. To edit an existing pet, click the edit pet button. To delete a pet, click the delete pet button. 
+
+Screenshot of webpage: ![screenshot-of-webpage](https://user-images.githubusercontent.com/103315205/183782872-9797b617-09c5-4e49-a644-ca74d9f7c0ec.png)
+
 
 ## Credit
 
-[Bulma CSS Framework](https://bulma.io/) | [CSS Scan buttons](https://getcssscan.com/css-buttons-examples) | [Emojipedia](https://emojipedia.org/) | [avocado image](https://www.tastingtable.com/842086/how-to-tell-if-your-avocado-has-gone-bad/)
+[Bulma CSS Framework](https://bulma.io/) </br>
+[CSS Scan buttons](https://getcssscan.com/css-buttons-examples) </br>
+[Emojipedia](https://emojipedia.org/) </br>
+[avocado image](https://www.tastingtable.com/842086/how-to-tell-if-your-avocado-has-gone-bad/) </br> 
 
 ## License
 
@@ -30,9 +36,9 @@ This application is covered under the MIT License.
 
 ## Collaborators
 
-Our Github profiles: 
-[Olivia McKee](https://github.com/oliviamckee)
-[Zac Guse-Humphrey](https://github.com/zwhumphrey)
-[Nick Schenck](https://github.com/NickSchenck)
-[Ira Strubhar](https://github.com/TaylorStrubhar)
+Our Github profiles: </br>
+[Olivia McKee](https://github.com/oliviamckee) </br>
+[Zac Guse-Humphrey](https://github.com/zwhumphrey) </br>
+[Nick Schenck](https://github.com/NickSchenck) </br>
+[Ira Strubhar](https://github.com/TaylorStrubhar) </br>
 
